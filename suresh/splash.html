@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Indian History Explorer</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+font-family:Arial;
+background:linear-gradient(to bottom,#FF9933,white,#138808);
+}
+
+h1{
+font-size:40px;
+margin-top:20px;
+}
+
+.chakra{
+width:80px;
+height:80px;
+border:6px solid #000080;
+border-radius:50%;
+position:relative;
+animation:spin 2s linear infinite;
+}
+
+.chakra::before,
+.chakra::after{
+content:"";
+position:absolute;
+top:50%;
+left:50%;
+width:2px;
+height:80px;
+background:#000080;
+transform:translate(-50%,-50%);
+}
+
+.chakra::after{
+transform:translate(-50%,-50%) rotate(90deg);
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="chakra"></div>
+
+<h1>🇮🇳 Indian History Explorer</h1>
+
+<p>Loading India's Glorious Past...</p>
+
+<script>
+
+setTimeout(function(){
+window.location.href="login.html";
+},3000);
+
+</script>
+
+</body>
+</html>

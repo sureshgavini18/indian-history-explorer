@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map | Indian History Explorer</title>
+  <meta name="description" content="Explore Indian history through our interactive map. Click on states to discover their historical significance.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🇮🇳</div>
+        <span class="logo-text">History Explorer</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fighters.html">Freedom Fighters</a></li>
+        <li><a href="kings.html">Kings</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="dynasties.html">Dynasties</a></li>
+        <li><a href="monuments.html">Monuments</a></li>
+        <li><a href="map.html" class="active">Map</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="chatbot.html">Chatbot</a></li>
+        <li><a href="about.html">About India</a></li>
+      </ul>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh; padding-top: 100px;">
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1920');">
+      <div class="slide-content"></div>
+    </div>
+    <div class="hero-content" style="padding: 40px 20px;">
+      <div class="hero-badge">🗺️ Explore by Region</div>
+      <h1 class="hero-title">
+        <span class="saffron">Interactive</span>
+        <span class="white">Map</span>
+      </h1>
+      <p class="hero-subtitle">Click on any state to discover its rich historical heritage</p>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Explore India by Region</h2>
+        <p class="section-subtitle">Click on a state to learn about its historical significance</p>
+      </div>
+
+      <div class="map-container animate-on-scroll">
+        <!-- Simplified India Map SVG -->
+        <svg viewBox="0 0 800 900" class="india-map" xmlns="http://www.w3.org/2000/svg">
+          <!-- Jammu & Kashmir -->
+          <path class="map-region" data-state="jammu" d="M180,50 L280,40 L320,80 L300,120 L250,130 L200,110 L160,80 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Punjab -->
+          <path class="map-region" data-state="punjab" d="M200,130 L260,125 L280,160 L240,180 L190,170 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Rajasthan -->
+          <path class="map-region" data-state="rajasthan" d="M140,180 L260,170 L300,200 L280,280 L200,300 L120,260 L100,200 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Gujarat -->
+          <path class="map-region" data-state="gujarat" d="M80,280 L180,270 L200,320 L160,380 L100,360 L60,320 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Maharashtra -->
+          <path class="map-region" data-state="maharashtra" d="M180,320 L280,310 L320,360 L300,440 L220,460 L160,400 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Madhya Pradesh -->
+          <path class="map-region" data-state="madhya pradesh" d="M280,240 L380,230 L420,280 L400,350 L320,360 L260,300 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Uttar Pradesh -->
+          <path class="map-region" data-state="uttar pradesh" d="M320,160 L440,150 L480,200 L460,260 L380,270 L300,220 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Bihar -->
+          <path class="map-region" data-state="bihar" d="M480,200 L550,190 L580,240 L540,280 L480,270 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- West Bengal -->
+          <path class="map-region" data-state="west bengal" d="M550,280 L620,270 L660,320 L640,380 L580,360 L540,320 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Odisha -->
+          <path class="map-region" data-state="odisha" d="M520,380 L600,370 L630,420 L600,460 L520,450 L480,410 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Karnataka -->
+          <path class="map-region" data-state="karnataka" d="M220,480 L320,470 L340,520 L300,580 L220,570 L180,520 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Andhra Pradesh -->
+          <path class="map-region" data-state="andhra pradesh" d="M360,460 L480,450 L520,500 L480,560 L380,550 L340,500 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Tamil Nadu -->
+          <path class="map-region" data-state="tamil nadu" d="M280,580 L380,570 L400,620 L360,680 L280,670 L240,620 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Kerala -->
+          <path class="map-region" data-state="kerala" d="M240,620 L300,615 L320,660 L280,720 L220,700 L200,650 Z" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- Delhi -->
+          <circle class="map-region" data-state="delhi" cx="300" cy="200" r="15" fill="rgba(255,153,51,0.3)" stroke="#FF9933" stroke-width="2"/>
+          
+          <!-- State Labels -->
+          <text x="220" y="85" fill="#fff" font-size="10" text-anchor="middle">J&K</text>
+          <text x="230" y="155" fill="#fff" font-size="10" text-anchor="middle">Punjab</text>
+          <text x="200" y="240" fill="#fff" font-size="10" text-anchor="middle">Rajasthan</text>
+          <text x="130" y="320" fill="#fff" font-size="10" text-anchor="middle">Gujarat</text>
+          <text x="240" y="390" fill="#fff" font-size="10" text-anchor="middle">Maharashtra</text>
+          <text x="340" y="300" fill="#fff" font-size="10" text-anchor="middle">M.P.</text>
+          <text x="390" y="210" fill="#fff" font-size="10" text-anchor="middle">U.P.</text>
+          <text x="520" y="235" fill="#fff" font-size="10" text-anchor="middle">Bihar</text>
+          <text x="600" y="330" fill="#fff" font-size="10" text-anchor="middle">W.B.</text>
+          <text x="560" y="420" fill="#fff" font-size="10" text-anchor="middle">Odisha</text>
+          <text x="260" y="525" fill="#fff" font-size="10" text-anchor="middle">Karnataka</text>
+          <text x="430" y="510" fill="#fff" font-size="10" text-anchor="middle">A.P.</text>
+          <text x="330" y="630" fill="#fff" font-size="10" text-anchor="middle">Tamil Nadu</text>
+          <text x="260" y="670" fill="#fff" font-size="10" text-anchor="middle">Kerala</text>
+          <text x="300" y="205" fill="#fff" font-size="8" text-anchor="middle">Delhi</text>
+        </svg>
+
+        <div class="map-info">
+          <h3 class="map-info-title">Select a State</h3>
+          <div class="map-info-content">
+            <p>Click on any state in the map above to learn about its historical significance, important monuments, and contribution to Indian history.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional Highlights -->
+  <section class="section" style="background: rgba(0,0,0,0.2);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Regional Highlights</h2>
+        <p class="section-subtitle">Key historical regions of India</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">North India</h3>
+            <p class="card-subtitle">Cradle of Empires</p>
+            <p class="card-description">Home to the Indus Valley Civilization, Maurya and Gupta empires, and the Mughal heartland. Contains Delhi, Agra, and Varanasi - cities that shaped Indian history.</p>
+            <div class="card-tags">
+              <span class="card-tag">Delhi</span>
+              <span class="card-tag">Agra</span>
+              <span class="card-tag">Varanasi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">South India</h3>
+            <p class="card-subtitle">Temple Kingdoms</p>
+            <p class="card-description">Home to ancient Dravidian kingdoms like Chola, Pandya, and Vijayanagara. Known for magnificent temples, rich literature, and maritime trade.</p>
+            <div class="card-tags">
+              <span class="card-tag">Chola</span>
+              <span class="card-tag">Temples</span>
+              <span class="card-tag">Trade</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">West India</h3>
+            <p class="card-subtitle">Maratha Power</p>
+            <p class="card-description">The land of Shivaji Maharaj and the Maratha Empire. Also home to ancient port cities like Lothal and the rock-cut caves of Ajanta and Ellora.</p>
+            <div class="card-tags">
+              <span class="card-tag">Maratha</span>
+              <span class="card-tag">Caves</span>
+              <span class="card-tag">Ports</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">East India</h3>
+            <p class="card-subtitle">Cultural Heritage</p>
+            <p class="card-description">Center of Bengal Renaissance and India's freedom movement. Home to ancient universities like Nalanda and Vikramshila.</p>
+            <div class="card-tags">
+              <span class="card-tag">Bengal</span>
+              <span class="card-tag">Nalanda</span>
+              <span class="card-tag">Renaissance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Indian History Explorer</h4>
+        <p>An educational platform dedicated to preserving and sharing the rich heritage of India.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="fighters.html">Freedom Fighters</a></li>
+          <li><a href="kings.html">Kings of India</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="map.html">Interactive Map</a></li>
+          <li><a href="chatbot.html">AI Chatbot</a></li>
+          <li><a href="monuments.html">Monuments</a></li>
+          <li><a href="about.html">About India</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>About Project</h4>
+        <p>Created for educational purposes as a college mini-project.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>JAI HIND ❤️ JAI JAWAN JAI KISHAN</p>
+    </div>
+    <div class="footer-tiranga">
+      <div class="saffron"></div>
+      <div class="white"></div>
+      <div class="green"></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

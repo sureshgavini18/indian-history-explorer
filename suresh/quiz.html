@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Quiz | Indian History Explorer</title>
+  <meta name="description" content="Test your knowledge of Indian history with our interactive quiz. Multiple choice questions with scoring.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🇮🇳</div>
+        <span class="logo-text">History Explorer</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fighters.html">Freedom Fighters</a></li>
+        <li><a href="kings.html">Kings</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="dynasties.html">Dynasties</a></li>
+        <li><a href="monuments.html">Monuments</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="chatbot.html">Chatbot</a></li>
+        <li><a href="about.html">About India</a></li>
+      </ul>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh; padding-top: 100px;">
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=1920');">
+      <div class="slide-content"></div>
+    </div>
+    <div class="hero-content" style="padding: 40px 20px;">
+      <div class="hero-badge">🎯 Test Your Knowledge</div>
+      <h1 class="hero-title">
+        <span class="saffron">History</span>
+        <span class="white">Quiz</span>
+      </h1>
+      <p class="hero-subtitle">Challenge yourself with questions about India's glorious past</p>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Indian History Quiz</h2>
+        <p class="section-subtitle">Answer the questions and test your knowledge</p>
+      </div>
+
+      <div class="quiz-container animate-on-scroll">
+        <div class="quiz-header">
+          <div class="quiz-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 10%;"></div>
+            </div>
+            <div class="score-display">Score: 0/10</div>
+          </div>
+        </div>
+
+        <div class="question-box">
+          <div class="question-number">Question 1 of 10</div>
+          <div class="question-text">Who is known as the 'Father of the Nation' in India?</div>
+        </div>
+
+        <div class="options-grid">
+          <button class="option-btn" onclick="selectOption(0)">Jawaharlal Nehru</button>
+          <button class="option-btn" onclick="selectOption(1)">Mahatma Gandhi</button>
+          <button class="option-btn" onclick="selectOption(2)">Subhas Chandra Bose</button>
+          <button class="option-btn" onclick="selectOption(3)">Sardar Patel</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Tips -->
+  <section class="section" style="background: rgba(0,0,0,0.2);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Quiz Tips</h2>
+        <p class="section-subtitle">How to improve your score</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">📚</div>
+          <h3>Study the Timeline</h3>
+          <p>Understanding the chronological order of events helps answer questions about dates and periods. Visit our Timeline page to learn more.</p>
+        </div>
+
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">👑</div>
+          <h3>Learn About Rulers</h3>
+          <p>Know the major kings, emperors, and their achievements. Our Kings page has detailed information about India's greatest rulers.</p>
+        </div>
+
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">🏛️</div>
+          <h3>Explore Monuments</h3>
+          <p>Familiarize yourself with India's architectural heritage. Each monument has a story tied to historical events and rulers.</p>
+        </div>
+
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">🙏</div>
+          <h3>Know Freedom Fighters</h3>
+          <p>The independence movement is a crucial part of the quiz. Learn about the brave souls who fought for India's freedom.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Indian History Explorer</h4>
+        <p>An educational platform dedicated to preserving and sharing the rich heritage of India.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="fighters.html">Freedom Fighters</a></li>
+          <li><a href="kings.html">Kings of India</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="map.html">Interactive Map</a></li>
+          <li><a href="chatbot.html">AI Chatbot</a></li>
+          <li><a href="monuments.html">Monuments</a></li>
+          <li><a href="about.html">About India</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>About Project</h4>
+        <p>Created for educational purposes as a college mini-project.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>JAI HIND ❤️ JAI JAWAN JAI KISHAN</p>
+    </div>
+    <div class="footer-tiranga">
+      <div class="saffron"></div>
+      <div class="white"></div>
+      <div class="green"></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

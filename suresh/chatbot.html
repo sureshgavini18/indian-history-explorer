@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot | Indian History Explorer</title>
+  <meta name="description" content="Ask our AI chatbot questions about Indian history, freedom fighters, kings, dynasties, and monuments.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🇮🇳</div>
+        <span class="logo-text">History Explorer</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fighters.html">Freedom Fighters</a></li>
+        <li><a href="kings.html">Kings</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="dynasties.html">Dynasties</a></li>
+        <li><a href="monuments.html">Monuments</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="chatbot.html" class="active">Chatbot</a></li>
+        <li><a href="about.html">About India</a></li>
+      </ul>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh; padding-top: 100px;">
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1920');">
+      <div class="slide-content"></div>
+    </div>
+    <div class="hero-content" style="padding: 40px 20px;">
+      <div class="hero-badge">🤖 Ask Anything</div>
+      <h1 class="hero-title">
+        <span class="saffron">AI</span>
+        <span class="white">Chatbot</span>
+      </h1>
+      <p class="hero-subtitle">Your personal guide to Indian history</p>
+    </div>
+  </section>
+
+  <!-- Chatbot Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Chat with Our History Bot</h2>
+        <p class="section-subtitle">Ask questions about Indian history, freedom fighters, kings, and more</p>
+      </div>
+
+      <div class="chatbot-container animate-on-scroll">
+        <div class="chat-header">
+          <div class="chat-avatar">🤖</div>
+          <div class="chat-info">
+            <h3>History Bot</h3>
+            <p>Online - Ask me anything!</p>
+          </div>
+        </div>
+
+        <div class="chat-messages">
+          <!-- Messages will be added here by JavaScript -->
+        </div>
+
+        <div class="quick-questions">
+          <button class="quick-question">Who was Shivaji Maharaj?</button>
+          <button class="quick-question">When did India get independence?</button>
+          <button class="quick-question">Who was Mahatma Gandhi?</button>
+          <button class="quick-question">Tell me about Taj Mahal</button>
+        </div>
+
+        <div class="chat-input-container">
+          <input type="text" class="chat-input" placeholder="Type your question here...">
+          <button class="chat-send-btn">➤</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample Questions -->
+  <section class="section" style="background: rgba(0,0,0,0.2);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Questions You Can Ask</h2>
+        <p class="section-subtitle">Here are some topics our chatbot can help with</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">Freedom Fighters</h3>
+            <p class="card-description">Ask about Mahatma Gandhi, Bhagat Singh, Subhas Chandra Bose, Rani Lakshmi Bai, and other freedom fighters who shaped India's destiny.</p>
+            <div class="card-tags">
+              <span class="card-tag">Gandhi</span>
+              <span class="card-tag">Bose</span>
+              <span class="card-tag">Bhagat Singh</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">Kings & Rulers</h3>
+            <p class="card-description">Learn about Shivaji Maharaj, Ashoka the Great, Raja Raja Chola, Krishnadevaraya, and other legendary rulers of India.</p>
+            <div class="card-tags">
+              <span class="card-tag">Shivaji</span>
+              <span class="card-tag">Ashoka</span>
+              <span class="card-tag">Chola</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">Dynasties & Empires</h3>
+            <p class="card-description">Discover information about Maurya, Gupta, Mughal, Maratha, and Chola dynasties that ruled the Indian subcontinent.</p>
+            <div class="card-tags">
+              <span class="card-tag">Maurya</span>
+              <span class="card-tag">Gupta</span>
+              <span class="card-tag">Mughal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">Monuments & Sites</h3>
+            <p class="card-description">Get details about Taj Mahal, Red Fort, Qutub Minar, and other magnificent monuments that showcase India's architectural heritage.</p>
+            <div class="card-tags">
+              <span class="card-tag">Taj Mahal</span>
+              <span class="card-tag">Red Fort</span>
+              <span class="card-tag">Qutub Minar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">Historical Events</h3>
+            <p class="card-description">Ask about Indian independence, major battles, important dates, and key events that shaped Indian history.</p>
+            <div class="card-tags">
+              <span class="card-tag">1947</span>
+              <span class="card-tag">1857</span>
+              <span class="card-tag">Independence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card animate-on-scroll">
+          <div class="card-content">
+            <h3 class="card-title">General Questions</h3>
+            <p class="card-description">Ask "Who was...?", "What is...?", "When did...?", or "Where is...?" questions about any historical topic.</p>
+            <div class="card-tags">
+              <span class="card-tag">Who</span>
+              <span class="card-tag">What</span>
+              <span class="card-tag">When</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Indian History Explorer</h4>
+        <p>An educational platform dedicated to preserving and sharing the rich heritage of India.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="fighters.html">Freedom Fighters</a></li>
+          <li><a href="kings.html">Kings of India</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="map.html">Interactive Map</a></li>
+          <li><a href="chatbot.html">AI Chatbot</a></li>
+          <li><a href="monuments.html">Monuments</a></li>
+          <li><a href="about.html">About India</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>About Project</h4>
+        <p>Created for educational purposes as a college mini-project.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made with ❤️ for Bharat | Indian History Explorer © 2024</p>
+    </div>
+    <div class="footer-tiranga">
+      <div class="saffron"></div>
+      <div class="white"></div>
+      <div class="green"></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

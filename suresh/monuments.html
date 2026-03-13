@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historical Monuments | Indian History Explorer</title>
+  <meta name="description" content="Explore India's magnificent historical monuments - Taj Mahal, Red Fort, Qutub Minar, Brihadeeswara Temple, and more.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🇮🇳</div>
+        <span class="logo-text">History Explorer</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fighters.html">Freedom Fighters</a></li>
+        <li><a href="kings.html">Kings</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="dynasties.html">Dynasties</a></li>
+        <li><a href="monuments.html" class="active">Monuments</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="chatbot.html">Chatbot</a></li>
+        <li><a href="about.html">About India</a></li>
+      </ul>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh; padding-top: 100px;">
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1920');">
+      <div class="slide-content"></div>
+    </div>
+    <div class="hero-content" style="padding: 40px 20px;">
+      <div class="hero-badge">🏛️ Architectural Marvels</div>
+      <h1 class="hero-title">
+        <span class="saffron">Historical</span>
+        <span class="white">Monuments</span>
+      </h1>
+      <p class="hero-subtitle">Timeless wonders that showcase India's architectural brilliance</p>
+    </div>
+  </section>
+
+  <!-- Monuments Gallery -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Wonders of India</h2>
+        <p class="section-subtitle">UNESCO World Heritage Sites and architectural masterpieces</p>
+      </div>
+
+      <div class="card-grid">
+        <!-- Taj Mahal -->
+        <div class="card animate-on-scroll" id="taj">
+          <img src="taj.jpeg" alt="Taj Mahal" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Taj Mahal</h3>
+            <p class="card-subtitle">Agra, Uttar Pradesh | 1653 CE</p>
+            <p class="card-description">An ivory-white marble mausoleum built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. Considered one of the Seven Wonders of the World and a UNESCO World Heritage Site.</p>
+            <div class="card-tags">
+              <span class="card-tag">Mughal</span>
+              <span class="card-tag">UNESCO</span>
+              <span class="card-tag">Marble</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Red Fort -->
+        <div class="card animate-on-scroll" id="redfort">
+          <img src="red.jpeg" alt="Red Fort" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Red Fort</h3>
+            <p class="card-subtitle">Delhi | 1648 CE</p>
+            <p class="card-description">A historic fort that served as the main residence of Mughal emperors for nearly 200 years. Made of red sandstone, it's where India's Prime Minister hoists the national flag on Independence Day.</p>
+            <div class="card-tags">
+              <span class="card-tag">Mughal</span>
+              <span class="card-tag">UNESCO</span>
+              <span class="card-tag">Sandstone</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Qutub Minar -->
+        <div class="card animate-on-scroll" id="qutub">
+          <img src="qutub.jpeg" alt="Qutub Minar" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Qutub Minar</h3>
+            <p class="card-subtitle">Delhi | 1193 CE</p>
+            <p class="card-description">The tallest brick minaret in the world, standing at 73 meters. Built by Qutb-ud-din Aibak and later completed by Iltutmish, it showcases Indo-Islamic architecture with intricate carvings.</p>
+            <div class="card-tags">
+              <span class="card-tag">Delhi Sultanate</span>
+              <span class="card-tag">UNESCO</span>
+              <span class="card-tag">Minaret</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brihadeeswara Temple -->
+        <div class="card animate-on-scroll">
+          <img src="bhihadeeswar.jpeg" alt="Brihadeeswara Temple" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Brihadeeswara Temple</h3>
+            <p class="card-subtitle">Thanjavur, Tamil Nadu | 1010 CE</p>
+            <p class="card-description">Built by Raja Raja Chola I, this magnificent temple is dedicated to Lord Shiva. Its vimana (tower) is 66 meters tall and is an engineering marvel of the Chola period.</p>
+            <div class="card-tags">
+              <span class="card-tag">Chola</span>
+              <span class="card-tag">UNESCO</span>
+              <span class="card-tag">Granite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hampi -->
+        <div class="card animate-on-scroll">
+          <img src="hampi.jpeg" alt="Hampi" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Hampi</h3>
+            <p class="card-subtitle">Karnataka | 14th-16th Century</p>
+            <p class="card-description">The ruins of Vijayanagara, the former capital of the Vijayanagara Empire. The site features stunning temples, palaces, and market streets spread across a surreal boulder-strewn landscape.</p>
+            <div class="card-tags">
+              <span class="card-tag">Vijayanagara</span>
+              <span class="card-tag">UNESCO</span>
+              <span class="card-tag">Ruins</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ajanta Caves -->
+        <div class="card animate-on-scroll">
+          <img src="ajanta.jpeg" alt="Ajanta Caves" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Ajanta Caves</h3>
+            <p class="card-subtitle">Maharashtra | 2nd Century BCE - 6th Century CE</p>
+            <p class="card-description">30 rock-cut Buddhist cave monuments featuring paintings and sculptures considered masterpieces of Buddhist religious art. The caves were abandoned and rediscovered in 1819.</p>
+            <div class="card-tags">
+              <span class="card-tag">Buddhist</span>
+              <span class="card-tag">UNESCO</span>
+              <span class="card-tag">Paintings</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ellora Caves -->
+        <div class="card animate-on-scroll">
+          <img src="ellora.jpg" alt="Ellora Caves" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Ellora Caves</h3>
+            <p class="card-subtitle">Maharashtra | 6th-10th Century CE</p>
+            <p class="card-description">34 caves representing Hindu, Buddhist, and Jain traditions. The Kailasa Temple (Cave 16) is a monolithic structure carved from a single rock, one of the largest of its kind in the world.</p>
+            <div class="card-tags">
+              <span class="card-tag">Multi-faith</span>
+              <span class="card-tag">UNESCO</span>
+              <span class="card-tag">Rock-cut</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Konark Sun Temple -->
+        <div class="card animate-on-scroll">
+          <img src="konark.jpeg" alt="Konark Sun Temple" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Konark Sun Temple</h3>
+            <p class="card-subtitle">Odisha | 13th Century CE</p>
+            <p class="card-description">Built in the shape of a gigantic chariot of the Sun God Surya, with elaborately carved stone wheels, pillars, and walls. A masterpiece of Kalinga architecture.</p>
+            <div class="card-tags">
+              <span class="card-tag">Kalinga</span>
+              <span class="card-tag">UNESCO</span>
+              <span class="card-tag">Chariot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Styles -->
+  <section class="section" style="background: rgba(0,0,0,0.2);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Architectural Styles</h2>
+        <p class="section-subtitle">Diverse building traditions across Indian history</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">🏛️</div>
+          <h3>Ancient Indian</h3>
+          <p>Rock-cut caves, stupas, and temples from the Mauryan and Gupta periods. Characterized by intricate carvings, pillars, and Buddhist/Hindu motifs. Examples: Ajanta, Sanchi Stupa.</p>
+        </div>
+
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">🕌</div>
+          <h3>Indo-Islamic</h3>
+          <p>A fusion of Indian and Islamic architectural elements featuring domes, arches, minarets, and intricate geometric patterns. Examples: Qutub Minar, Taj Mahal, Red Fort.</p>
+        </div>
+
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">🕉️</div>
+          <h3>Dravidian (South Indian)</h3>
+          <p>Characterized by towering gopurams (gateway towers), pillared halls, and elaborate sculptures. Examples: Brihadeeswara Temple, Meenakshi Temple.</p>
+        </div>
+
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">⛰️</div>
+          <h3>Rock-cut Architecture</h3>
+          <p>Structures carved directly from solid rock, including entire temples. Showcases the extraordinary skill of ancient Indian craftsmen. Examples: Ellora, Elephanta Caves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Indian History Explorer</h4>
+        <p>An educational platform dedicated to preserving and sharing the rich heritage of India.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="fighters.html">Freedom Fighters</a></li>
+          <li><a href="kings.html">Kings of India</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="map.html">Interactive Map</a></li>
+          <li><a href="chatbot.html">AI Chatbot</a></li>
+          <li><a href="monuments.html">Monuments</a></li>
+          <li><a href="about.html">About India</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>About Project</h4>
+        <p>Created for educational purposes as a college mini-project.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> JAI HIND ❤️ JAI JAWAN JAI KISHAN</p>
+    </div>
+    <div class="footer-tiranga">
+      <div class="saffron"></div>
+      <div class="white"></div>
+      <div class="green"></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

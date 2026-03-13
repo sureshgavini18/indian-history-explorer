@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login | Indian History Explorer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* Animated Background */
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#FF9933,#ffffff,#138808,#000080);
+background-size:400% 400%;
+animation:bgAnimation 10s ease infinite;
+}
+
+@keyframes bgAnimation{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Login Box */
+
+.login-box{
+background:white;
+padding:40px;
+border-radius:15px;
+width:340px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.login-box h1{
+margin-bottom:20px;
+}
+
+/* Inputs */
+
+.login-box input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+/* Button */
+
+.login-box button{
+width:100%;
+padding:12px;
+background:#FF9933;
+border:none;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-box button:hover{
+background:#e6851c;
+}
+
+/* Error */
+
+#error{
+color:red;
+margin-top:10px;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>🇮🇳 Login</h1>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p id="error"></p>
+
+</div>
+
+<script>
+
+function login(){
+
+let user=document.getElementById("username").value;
+let pass=document.getElementById("password").value;
+
+if(user==="admin" && pass==="1234"){
+
+window.location.href="index.html";
+
+}
+
+else{
+
+document.getElementById("error").innerText="Invalid Username or Password";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
